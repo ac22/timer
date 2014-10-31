@@ -7,4 +7,7 @@ Compile:	rustc timer.rs
 Run:		./timer 10			
 (The above example would set a timer for 10 minutes.)
 
+The alarm file must be in the same directory as timer and be called alarm.wav
+cvlc is used to play alarm.wav
+
 Tested on rustc 0.13.0
