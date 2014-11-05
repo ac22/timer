@@ -65,7 +65,7 @@ fn main() {
     let matches = match getopts(args.tail(), opts) {
         Ok(m)   => m,
         Err(f)  => { print_usage(program.as_slice(), opts); 
-            fail!(f.to_string())
+            panic!(f.to_string())
         }
     };
 
